@@ -11,11 +11,12 @@ class Banner extends ModComponent{
         /* block */
         background: this.props.color,
         backgroundImage: 'linear-gradient(to ' + this.props.gradient + ')',
-        padding: '1.5%',
-        paddingLeft: '3.5%',
+        padding: this.props.padding,
+        paddingLeft: this.props.indent,
 
         /* text */
         color: this.props.textColor,
+        textAlign: this.props.textAlign,
         fontFamily: this.props.font,
         fontSize: this.props.textSize,
         textTransform: this.props.format
