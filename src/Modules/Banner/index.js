@@ -16,11 +16,12 @@ class Banner extends ModComponent{
 
         /* text */
         color: this.props.textColor,
+        fontFamily: this.props.font,
         fontSize: this.props.textSize,
         textTransform: this.props.format
     }, {
         //HOVER
-        //...
+        color: this.props.textColorHover
     }, {
         //MINIMAL CSS
         //...
