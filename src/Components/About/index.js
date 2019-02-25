@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import AboutDiv from '../../Modules/Banner';
-import Image from '../../Modules/Image';
 
 class About extends Component{
   render(){
@@ -9,20 +8,14 @@ class About extends Component{
 
       <AboutDiv
         id = 'About'
-        padding = '3%'
+        paddingTop = '1.5%'
         color = '#8cccff'
         textAlign = 'center'
         textColor = 'white'
         textColorHover = 'white'
         textSize = '2em'
         font = 'Helvetica'>
-        <Image src = 'me'
-               component = 'About'
-               width = '128'
-               height = '128'
-               radius = '50' />
-        Who I am ?
-        <hr />
+        <h3>Who I am ?</h3>
         In love with coding since my middle school years<br />
         Oh lord, so much time have passed since... (laughts)<br />
         Anyway, if you are looking for a passionate & positive minded developer<br />
@@ -32,6 +25,12 @@ class About extends Component{
         If you are tempted to hire the french touch,<br />
         or may be having your project tailored to all your crazy needs<br />
         Please scroll down.
+
+        <br /><br />
+
+        ...
+
+        <br /><br />
       </AboutDiv>
 
     );

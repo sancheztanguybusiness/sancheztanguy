@@ -12,7 +12,10 @@ class Banner extends ModComponent{
         background: this.props.color,
         backgroundImage: 'linear-gradient(to ' + this.props.gradient + ')',
         padding: this.props.padding,
+        paddingTop: this.props.paddingTop,
         paddingLeft: this.props.indent,
+        paddingRight: this.props.paddingRight,
+        paddingBottom: this.props.paddingBottom,
 
         /* text */
         color: this.props.textColor,

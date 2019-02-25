@@ -21,7 +21,8 @@ class Card extends ModComponent{
 
           /* color */
           color: this.props.textColor,
-          background: this.props.color
+          background: this.props.color,
+          backgroundImage: 'linear-gradient(to ' + this.props.gradient + ')'
     }, {
         //HOVER
         cursor: this.props.cursorHover,
@@ -43,7 +44,8 @@ class Card extends ModComponent{
 
           /* color */
           color: this.props.textColor,
-          background: this.props.color
+          background: this.props.color,
+          backgroundImage: 'linear-gradient(to ' + this.props.gradient + ')'
     }, {
         //MINIMAL CSS (HOVER)
         cursor: this.props.cursorHover,

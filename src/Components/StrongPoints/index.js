@@ -14,7 +14,7 @@ class StrongPoints extends Component{
         color = 'white'
         textColor = 'black'
         textColorHover = 'black'
-        textSize = '1.2em'
+        textSize = '1.7em'
         font = 'Helvetica'>
 
         <center>
@@ -22,10 +22,10 @@ class StrongPoints extends Component{
         <Card id = 'Responsive'
               borderRadius = '5'
               separation = '1'
-              width = '110px'
+              width = '200px'
               height = '125px'
               textColor = 'white'
-              color = '#8cccff'>
+              gradient = 'right, #188cdb, #4ba2dd'>
               Responsive
               <hr />
               Software, Web & Mobile
@@ -36,10 +36,10 @@ class StrongPoints extends Component{
         <Card id = 'TeamWork'
               borderRadius = '5'
               separation = '1'
-              width = '110px'
+              width = '200px'
               height = '125px'
               textColor = 'white'
-              color = '#8cccff'>
+              gradient = 'right, #188cdb, #4ba2dd'>
               TeamWork
               <hr />
               Trello (Kanban), Agile & Git
@@ -50,13 +50,13 @@ class StrongPoints extends Component{
         <Card id = 'BackEnd'
               borderRadius = '5'
               separation = '1'
-              width = '110px'
+              width = '200px'
               height = '125px'
               textColor = 'white'
-              color = '#8cccff'>
+              gradient = 'right, #188cdb, #4ba2dd'>
               BackEnd
               <hr />
-              SQL <br /> GitHub <br /> Heroku
+              SQL, GitHub & Heroku
               <br />
               ............
         </Card>
@@ -64,10 +64,10 @@ class StrongPoints extends Component{
         <Card id = 'uptodate'
               borderRadius = '5'
               separation = '1'
-              width = '110px'
+              width = '200px'
               height = '125px'
               textColor = 'white'
-              color = '#8cccff'>
+              gradient = 'right, #188cdb, #4ba2dd'>
               Up to Date
               <hr />
               Always learning the trends <br />............
