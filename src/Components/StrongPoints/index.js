@@ -65,7 +65,7 @@ class StrongPoints extends Component{
               color = '#8cccff'>
               Up to Date
               <hr />
-              Always learning the trend ............
+              Always learning the trend <br />............
         </Card>
 
         </center>
