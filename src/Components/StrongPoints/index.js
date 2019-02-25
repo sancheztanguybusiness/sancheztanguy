@@ -10,7 +10,7 @@ class StrongPoints extends Component{
 
       <StrongPointsDiv
         id = 'StrongPoints'
-        padding = '5%'
+        padding = '3%'
         color = 'white'
         textColor = 'black'
         textColorHover = 'black'
