@@ -1,72 +1,51 @@
 import React, { Component } from 'react';
 
-class Tag extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      id: 'tag-' + this.props.id,
-      class: 'tag',
-      value: this.props.children,
-      defaultCSS: this.props.defaultCSS,
-      style: {},
-      baseStyle: {
+import ModComponent from '../../Modules/ModComponent';
+
+class Tag extends ModComponent{
+
+  build(){
+    //defaultCSS
+    if(this.props.color == '') this.setState({color: 'black'});
+    if(this.props.textColor == '') this.setState({color: 'black'});
+
+    this.CSS({
+      //CSS
+        /* color */
+        color: this.props.textColor,
+
+        /* text */
+        fontSize: '1.5em',
+
+        /* block */
         display: 'inline-block',
-        border: '1px solid #bbc9c9',
+        borderTop: '1px solid ' + this.props.color,
+        borderLeft: '5px solid ' + this.props.color,
+        borderRight: '5px solid ' + this.props.color,
+        borderBottom: '1px solid ' + this.props.color,
         padding: '0.5%',
-        color: '#6e7a7a',
-        width: this.props.width
-      },
-      hoverStyle: {
-        display: 'inline-block',
-        border: '1px solid ' + this.props.hoverBorder,
-        padding: '0.5%',
-        color: this.props.hoverText,
-        width: this.props.width,
-        background: this.props.hover
-      },
-      disabledStyle: {
-        display: 'inline-block',
-        border: '1px solid ' + this.props.border,
-        padding: '0.5%',
-        textcolor: this.props.color,
-        width: this.props.width
-      }
-    };
+        marginRight: '0.5%',
+        boxShadow: '1px 2px 2px #ccc'
+    }, {
+        //HOVER
+        cursor: 'pointer',
 
-    this.hover = this.hover.bind(this);
-    this.unHover = this.unHover.bind(this);
+          /* color */
+          color: this.props.hoverTextColor,
+          borderTop: '1px solid ' + this.props.hoverColor,
+          borderLeft: '5px solid ' + this.props.hoverColor,
+          borderRight: '5px solid ' + this.props.hoverColor,
+          borderBottom: '1px solid ' + this.props.hoverColor,
+    }, {
+        //MINIMAL CSS
+        fontWeight: 'bold'
+    }, {
+        //MINIMAL CSS (HOVER)
+        cursor: 'pointer',
+        textDecoration: 'underline'
+    });
   }
 
-  componentDidMount(){
-    if(this.state.defaultCSS == 'off')
-      this.setState({style: this.state.disabledStyle});
-    else
-      this.setState({style: this.state.baseStyle});
-  }
-
-  hover(){
-    this.setState({style: this.state.hoverStyle});
-  }
-
-  unHover(){
-    if(this.state.defaultCSS == 'off')
-      this.setState({style: this.state.disabledStyle});
-    else
-      this.setState({style: this.state.baseStyle});
-  }
-
-  render(){
-    return(
-      <div onMouseEnter = { this.hover }
-           onMouseLeave = { this.unHover }
-           id = { this.state.id }
-           class = { this.state.class }
-           style = { this.state.style }
-           >{ this.state.value }
-      </div>
-    );
-
-  }
 }
 
 export default Tag;
