@@ -28,7 +28,7 @@ class StrongPoints extends Component{
               color = '#8cccff'>
               Responsive
               <hr />
-              Software, Web & Mobile
+              Software, Web & Mobile ............
         </Card>
 
         <Card id = 'TeamWork'
@@ -54,6 +54,18 @@ class StrongPoints extends Component{
               BackEnd Guaranteed
               <hr />
               SQL <br /> GitHub <br /> Heroku
+        </Card>
+
+        <Card id = 'uptodate'
+              borderRadius = '5'
+              separation = '1'
+              width = '110px'
+              height = '125px'
+              textColor = 'white'
+              color = '#8cccff'>
+              Up to Date
+              <hr />
+              Always learning the trend ............
         </Card>
 
         </center>
