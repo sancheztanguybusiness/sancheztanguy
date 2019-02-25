@@ -19,12 +19,9 @@ class StrongPoints extends Component{
 
         <Card id = 'Responsive'
               borderRadius = '10'
-              borderSize = '1'
-              borderStyle = 'solid'
-              borderColor = '#9db4c9'
               separation = '1'
               width = '110px'
-              height = '110px'
+              height = '125px'
               textColor = 'white'
               color = '#8cccff'>
               Responsive
@@ -34,12 +31,9 @@ class StrongPoints extends Component{
 
         <Card id = 'TeamWork'
               borderRadius = '10'
-              borderSize = '1'
-              borderStyle = 'solid'
-              borderColor = '#9db4c9'
               separation = '1'
               width = '110px'
-              height = '110px'
+              height = '125px'
               textColor = 'white'
               color = '#8cccff'>
               TeamWork
@@ -50,15 +44,14 @@ class StrongPoints extends Component{
 
         <Card id = 'BackEnd'
               borderRadius = '10'
-              borderSize = '1'
-              borderStyle = 'solid'
-              borderColor = '#9db4c9'
               separation = '1'
               width = '110px'
-              height = '110px'
+              height = '125px'
               textColor = 'white'
               color = '#8cccff'>
               BackEnd Guaranteed
+              <hr />
+              SQL <br /> GitHub <br /> Heroku
         </Card>
 
       </Banner>

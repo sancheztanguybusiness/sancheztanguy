@@ -24,7 +24,9 @@ class Card extends ModComponent{
           background: this.props.color
     }, {
         //HOVER
-        //...
+        cursor: this.props.cursorHover,
+        border: this.props.borderSize + 'px ' + this.props.borderStyle + ' ' + this.props.borderColorHover,
+        boxShadow: '2px 2px 2px ' + this.props.shadowColorHover,
     }, {
         //MINIMAL CSS
           /* block */
@@ -44,7 +46,9 @@ class Card extends ModComponent{
           background: this.props.color
     }, {
         //MINIMAL CSS (HOVER)
-        //...
+        cursor: this.props.cursorHover,
+        border: this.props.borderSize + 'px ' + this.props.borderStyle + ' ' + this.props.borderColorHover,
+        boxShadow: '2px 2px 2px ' + this.props.shadowColorHover,
     });
   }
 
