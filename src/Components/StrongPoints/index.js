@@ -1,24 +1,26 @@
 import React, { Component } from 'react';
 
-import Banner from '../../Modules/Banner';
+import StrongPointsDiv from '../../Modules/Banner';
 import Card from '../../Modules/Card';
+import center from '../../Modules/Center';
 
 class StrongPoints extends Component{
   render(){
     return(
 
-      <Banner
+      <StrongPointsDiv
         id = 'StrongPoints'
         padding = '5%'
         color = 'white'
         textColor = 'black'
-        textAlign = 'center'
         textColorHover = 'black'
         textSize = '1.2em'
         font = 'Helvetica'>
 
+        <center>
+
         <Card id = 'Responsive'
-              borderRadius = '10'
+              borderRadius = '5'
               separation = '1'
               width = '110px'
               height = '125px'
@@ -30,7 +32,7 @@ class StrongPoints extends Component{
         </Card>
 
         <Card id = 'TeamWork'
-              borderRadius = '10'
+              borderRadius = '5'
               separation = '1'
               width = '110px'
               height = '125px'
@@ -43,7 +45,7 @@ class StrongPoints extends Component{
         </Card>
 
         <Card id = 'BackEnd'
-              borderRadius = '10'
+              borderRadius = '5'
               separation = '1'
               width = '110px'
               height = '125px'
@@ -54,7 +56,9 @@ class StrongPoints extends Component{
               SQL <br /> GitHub <br /> Heroku
         </Card>
 
-      </Banner>
+        </center>
+
+      </StrongPointsDiv>
 
     );
   }

@@ -8,8 +8,7 @@ class Card extends ModComponent{
     this.CSS({
         //CSS
           /* block */
-          display: 'block',
-          float: 'left',
+          display: 'inline-block',
           width: this.props.width,
           height: this.props.height,
           border: this.props.borderSize + 'px ' + this.props.borderStyle + ' ' + this.props.borderColor,
@@ -18,7 +17,7 @@ class Card extends ModComponent{
           marginLeft: this.props.separation + '%',
           marginRight: this.props.separation + '%',
           marginBottom: '2%',
-          boxShadow: '2px 2px 2px #c3ced8',
+          boxShadow: '0.5px 1px 0.5px #c3ced8',
 
           /* color */
           color: this.props.textColor,
@@ -31,8 +30,7 @@ class Card extends ModComponent{
     }, {
         //MINIMAL CSS
           /* block */
-          display: 'block',
-          float: 'left',
+          display: 'inline-block',
           width: this.props.width,
           height: this.props.height,
           border: this.props.borderSize + 'px ' + this.props.borderStyle + ' ' + this.props.borderColor,
