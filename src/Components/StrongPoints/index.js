@@ -28,7 +28,9 @@ class StrongPoints extends Component{
               color = '#8cccff'>
               Responsive
               <hr />
-              Software, Web & Mobile ............
+              Software, Web & Mobile
+              <br />
+              ............
         </Card>
 
         <Card id = 'TeamWork'
@@ -40,8 +42,9 @@ class StrongPoints extends Component{
               color = '#8cccff'>
               TeamWork
               <hr />
-              Positive minded<hr />
-              Git & Agile
+              Trello (Kanban), Agile & Git
+              <br />
+              ............
         </Card>
 
         <Card id = 'BackEnd'
@@ -51,9 +54,11 @@ class StrongPoints extends Component{
               height = '125px'
               textColor = 'white'
               color = '#8cccff'>
-              BackEnd Guaranteed
+              BackEnd
               <hr />
               SQL <br /> GitHub <br /> Heroku
+              <br />
+              ............
         </Card>
 
         <Card id = 'uptodate'
@@ -65,7 +70,7 @@ class StrongPoints extends Component{
               color = '#8cccff'>
               Up to Date
               <hr />
-              Always learning the trend <br />............
+              Always learning the trends <br />............
         </Card>
 
         </center>
